@@ -1,0 +1,149 @@
+<style type="text/css">
+	.shortcode_table {
+		width: 100%;
+		border-collapse:collapse;
+	}
+
+	td, th {
+		border: 1px solid #d9d9d9;
+		padding: 15px;
+		vertical-align: top;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	th {
+		text-transform: uppercase;
+	}
+
+
+
+
+	tr td:first-child {
+		background-color: #efefef;
+		border-color: #d9d9d9;
+		border-left: 1px solid #d9d9d9;
+		border-style: solid;
+		border-width: 1px;
+		display: table-cell;
+		height: 71px;
+		width: 136px;
+	}
+
+</style>
+
+
+<table cellspacing="0" border="0" class="shortcode_table">
+	<colgroup span="4" width="85"></colgroup>
+	<tr>
+		<th height="17" align="left">Title</th>
+		<th align="left">Description</th>
+		<th align="left">Parameters</th>
+		<th align="left">Example</th>
+	</tr>
+	<tr>
+		<td height="47" align="left">Сontainer</td>
+		<td align="left">block Bootstrap 3 .container</td>
+		<td align="left">class = user class</td>
+		<td rowspan=3 align="left">[container]<br>[row]<br>[column class=&quot;col-xs-12&quot;]<br><br>//limited content of 12 columns<br><br>[/column]<br>[/row]<br>[/container]</td>
+	</tr>
+	<tr>
+		<td height="106" align="left">Row</td>
+		<td align="left">Block Bootstrap 3 lines, used to wrap columns</td>
+		<td align="left">--</td>
+	</tr>
+	<tr>
+		<td height="47" align="left">Column</td>
+		<td align="left">Block Bootstrap 3 columns</td>
+		<td align="left">class = <br>columns' class<a href="http://getbootstrap.com/css/#grid-options">Bootstrap 3</a></td>
+	</tr>
+	<tr>
+		<td height="47" align="left">column_inner</td>
+		<td align="left">Block Bootstrap 3 columns. You can use inside the shortcode column, to create columns</td>
+		<td align="left">class = <br>columns' class <a href="http://getbootstrap.com/css/#grid-options">Bootstrap 3</a></td>
+	</tr>
+	<tr>
+		<td height="151" align="left">Just wrapper</td>
+		<td align="left">Block &lt;div&gt; with class just_wrapper - You can use it as wrapper</td>
+		<td align="left">class = user's class <br><br> id = user's id</td>
+		<td align="left">[just_wrapper class=&quot;wrapExampleImage&quot;]<br><br>//any content<br><br>[/just_wrapper]</td>
+	</tr>
+	<tr>
+		<td height="151" align="left">just wrapper inner</td>
+		<td align="left">Block &lt;div&gt; with class just_wrapper_inner - You can use it as wrapper inside just_wrapper</td>
+		<td align="left">class = user's class<br/><br/>id = user's id</td>
+		<td align="left">[just_wrapper_inner id="justWrapperInner_ID" class=&quot;justWrapperInner&quot;]<br><br>//any content<br><br>[/just_wrapper_inner]</td>
+	</tr>
+	<tr>
+		<td height="151" align="left">search form</td>
+		<td align="left">It is used to display the search form <br></td>
+		<td align="left">class = user's class <br> btn_title - text on the button to search <br>'placeholder_text' - the text in the search box </td>
+		<td align="left">[search_form class=&quot;wrapExampleImage&quot; btn_title=&quot;text&quot; placeholder_text=&quot;text&quot;][/search_form]</td>
+	</tr>
+	<tr>
+		<td height="151" align="left">recent posts</td>
+		<td align="left">Used for the latest entries in the specified data type and category<br></td>
+		<td align="left">
+			Parameters with values of duty: <br> <br>
+			'type' => 'post', - the type of data <br> <br>
+			'category' => '', - the categories of data in the specified data type <br> <br>
+			'num' => '5', - number of output records <br> <br>
+			'meta' => 'true', - whether or not the meta information (creation date, etc.) <br> <br>
+			'thumb' => 'true', - show the preview picture or not <br> <br>
+			'thumb_width' => '120' - the width of the image preview <br> <br>
+			'thumb_height' => '120' - the height of the image preview <br> <br>
+			'more_text_single' => '', - the text of the button to read more than <br> <br>
+			'excerpt_count' => '0', - number of words in a text to review the record <br> <br>
+			'custom_class' => '', - user's class for the main wrap posts <br> <br>
+			'custom_class_item' => '' - user's class wrapper for each post <br> <br>
+		</td>
+		<td align="left">[recent_posts type=&quot;post&quot; category=&quot;&quot; num=&quot;&quot; meta=&quot;true&quot; thumb=&quot;true&quot; thumb_width=&quot;120&quot; thumb_height=&quot;120&quot; more_text_single=&quot;&quot; excerpt_count=&quot;15&quot; custom_class=&quot;&quot; custom_class_item=&quot;&quot;]</td>
+	</tr>
+	<tr>
+		<td height="62" align="left">Spacer big</td>
+		<td align="left">Adds a block for vertical large indentation</td>
+		<td align="left">--</td>
+		<td align="left">[spacer_big]</td>
+	</tr>
+	<tr>
+		<td height="62" align="left">spacer small</td>
+		<td align="left">Adds a block for vertical smaller indentation</td>
+		<td align="left">--</td>
+		<td align="left">[spacer_small]</td>
+	</tr>
+	<tr>
+		<td height="62" align="left">spacer super small</td>
+		<td align="left">Adds a block for vertical small indentation</td>
+		<td align="left">--</td>
+		<td align="left">[spacer_super_small]</td>
+	</tr>  
+	<tr>
+		<td height="62" align="left">br</td>
+		<td align="left">Forced line break</td>
+		<td align="left">--</td>
+		<td align="left">[br]</td>
+	</tr>
+	<tr>
+		<td height="375" align="left">Info box</td>
+		<td align="left">a block wrappers for grouping some of the elements in a single block</td>
+		<td align="left">class = attribute class <br></td>
+		<td align="left">[info_box class=&quot;hidden-xs benefit_item&quot;]It takes you only 3 clicks to start selling.[/info_box]</td>
+	</tr>
+	<tr>
+		<td height="151" align="left">Button</td>
+		<td align="left">Button</td>
+		<td align="left">class = attribute class<br><br>btn_title = text on the button<br><br>btn_url = button's url<br></td>
+		<td align="left">[button class=&quot;view_all&quot; btn_title=&quot;View all&quot; btn_url=&quot;#&quot;]</td>
+	</tr>
+	<tr>
+		<td height="151" align="left">current year</td>
+		<td align="left">It prints the current year</td>
+		<td align="left">--</td>
+		<td align="left">[current_year]</td>
+	</tr>
+	<tr>
+		<td height="151" align="left">custom_menu</td>
+		<td align="left">Displays a menu created in the "Appearance / menu"</td>
+		<td align="left">class - attribute class <br> menu_name - the name of the menu in the admin area</td>
+		<td align="left">[custom_menu class="blue-list" menu_name="Home page menu"]</td>
+	</tr>

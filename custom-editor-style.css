@@ -1,0 +1,3 @@
+.mce-menu .mce-menu-item-normal.mce-active, .mce-menu .mce-menu-item-preview.mce-active, .mce-menu .mce-menu-item.mce-selected, .mce-menu .mce-menu-item:focus, .mce-menu .mce-menu-item:hover {
+  background: #94d2f0;
+}
